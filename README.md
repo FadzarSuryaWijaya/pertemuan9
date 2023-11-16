@@ -159,7 +159,7 @@
 
 
 ## Flowchart
-<img src="flowchart.jpg"/>
+<img src="Flowchart.jpg"/>
 
 
 ## Penjelasan
