@@ -1,5 +1,13 @@
 # lab4py
 # TUGAS PRAKTIKUM 4
+## PROFIL
+| Variable | Isi |
+| -------- | --- |
+| **Nama** | Fadzar Surya Wijaya |
+| **NIM** | 312310451 |
+| **Kelas** | TI.23.A.5 |
+| **Mata Kuliah** | Bahasa Pemrograman |
+
 ## Latihan 1
 - Input
 # Membuat list dengan 5 elemen
