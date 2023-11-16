@@ -9,7 +9,7 @@
 | **Mata Kuliah** | Bahasa Pemrograman |
 
 ## Latihan 1
-- Input
+
 # Membuat list dengan 5 elemen
     - my_list = [10, 20, 30, 40, 50]
 
