@@ -1,5 +1,4 @@
-# lab4py
-# TUGAS PRAKTIKUM 4
+# TUGAS PRAKTIKUM 5
 ## PROFIL
 | Variable | Isi |
 | -------- | --- |
@@ -8,167 +7,126 @@
 | **Kelas** | TI.23.A.5 |
 | **Mata Kuliah** | Bahasa Pemrograman |
 
-## Latihan 1
+# Latihan 9 Bahasa Pemrograman
+## Buat sebuah list sebanyak 5 elemen dengan nilai bebas
+### Akses list:
+* Tampilkan elemen ke 3
+* Ambil nilai elemen ke 2 sampai elemen ke 4
+* Ambil elemen terakhir
 
-# Membuat list dengan 5 elemen
-    - my_list = [10, 20, 30, 40, 50]
+## Programnya
+``````    python
+    # akses list
+     my_list_a =[1, 5, 6, 8, 7]
+    print("element ke 3 =", my_list_a[3])
+    print("element ke 2 sampai ke 4 =", my_list_a[2:4])
+    print("element terakhir =",my_list_a[-1])
+``````
+### Outputnya:
 
-## AKSES LIST
-# Mengakses dan menampilkan elemen ke-3
-    - print("Elemen ke-3:", my_list[2])
+<img src="Gambar/Tugas1.png">
 
-# Mengambil nilai elemen ke-2 sampai elemen ke-4
-    - subset = my_list[1:4]
-    - print("Elemen ke 2 sampai ke 4:", subset)
-    
-# Mengambil elemen terakhir
-    - last_element = my_list[-1]
-    - print("Elemen terakhir:", last_element)
+### Ubah elemen list:
+* Ubah elemen ke 4 dengan nilai lainnya
+* Ubah elemen ke 4 sampai dengan elemen terakhir
 
-## UBAH ELEMENT LIST
-# ubah elemen ke 4 dengan nilai lainnya
-    - my_list[3] = 45
-    - print("List setelah mengubah elemen ke 4:", my_list)
+## Programnya
+ ``````   python
+    # ubah elemen list
+    my_list_a =[1, 5, 6, 8, 7]
+    my_list_a[2] = 3
+    my_list_a[3:4] = [5, 4]
 
-# ubah elemen ke 4 sampai dengan elemen terakhir
-    - my_list[3:] = [50, 60, 70]
-    - print("List setelah mengubah elemen ke 4 sampai dengan elemen terakhir:", my_list)
+    print("list =", my_list_a )
+    print("list =", my_list_a )
+``````
+### Outputnya:
 
-## TAMBAH ELEMENT LIST
-# Tambah elemen list
-# Ambil 2 bagian dari list pertama (A) dan jadikan list ke 2 (B)
-    - list_A = my_list[:2]
-    - list_B = list_A.copy()
+<img src="Gambar/Tugas2.png">
 
-# Tambahkan list B dengan nilai string
-    - B.append("Hello")
+### Tambah elemen list:
+* Ambil 2 bagian dari list pertama (A) dan jadikan list ke 2 (B)
+* Tambah list B dengan nilai string
+* Tambah list B dengan 3 nilai
+* Gabungkan list B dengan list A
 
-# Tambahkan list B dengan 3 nilai
-    - list_B.extend([3, 6, 9])
+## Programnya
+``````   python
+    # tambah elemen list
+    my_list_a =[1, 5, 6, 8, 7]
+    my_list_b = my_list_a[0:2]
+    my_list_b.append("Hello")
+    my_list_b.extend([1, 2, 3])
+    my_list_c = my_list_a + my_list_b
 
-# Gabungkan list B dengan list A
-    - combined_list = list_B + list_A
-    
-# Tampilkan hasil
-    - print("List A:", list_A)
-    - print("List B:", list_B)
-    - print("Gabungan List B dengan List A:", combined_list)
+    print("List A =", my_list_a)
+    print("List B =", my_list_b)
+    print("List C =", my_list_c)
+``````
+### Outputnya :
 
-## Output
+<img src="Gambar/Tugas3.png">
 
+### Output dari semua latihan diatas:
 
+<img src="Gambar/Latihan.png">
 
-## Penjelasan
+# Praktikum 4 Bahasa Pemrograman
+## Buat program sederhana untuk menambahkan data kedalam sebuah list dengan rincian sebagai berikut:
+* Progam meminta memasukkan data sebanyak-banyaknya (gunakan perulangan)
+* Tampilkan pertanyaan untuk menambah data (y/t?), apabila jawaban t (Tidak), maka program akan menampilkan daftar datanya.
+* Nilai Akhir diambil dari perhitungan 3 komponen nilai (tugas: 30%, uts: 35%, uas: 35%)
+* Buat flowchart dan penjelasan programnya pada README.md.
 
-# TUGAS PRAKTIKUM 4
-## Latihan 1
-- Input
-# Membuat list dengan 5 elemen
-    - my_list = [10, 20, 30, 40, 50]
+## Flowchartnya:
 
-## AKSES LIST
-# Mengakses dan menampilkan elemen ke-3
-    - print("Elemen ke-3:", my_list[2])
+<img src="Gambar/Flowchart">
 
-# Mengambil nilai elemen ke-2 sampai elemen ke-4
-    - subset = my_list[1:4]
-    - print("Elemen ke 2 sampai ke 4:", subset)
-    
-# Mengambil elemen terakhir
-    - last_element = my_list[-1]
-    - print("Elemen terakhir:", last_element)
+## Programnya:
+``````    python
+    # LIST
+    nama = []
+    nim = []
+    nilaiTugas = []
+    nilaiUTS = []
+    nilaiUAS = []
+    nilaiAkhir = []
 
-## UBAH ELEMENT LIST
-# ubah elemen ke 4 dengan nilai lainnya
-    - my_list[3] = 45
-    - print("List setelah mengubah elemen ke 4:", my_list)
+    print()
 
-# ubah elemen ke 4 sampai dengan elemen terakhir
-    - my_list[3:] = [50, 60, 70]
-    - print("List setelah mengubah elemen ke 4 sampai dengan elemen terakhir:", my_list)
+    # Input
+    while True:
+    nama.append(input("Masukan Nama : "))
+    nim.append(input("Masukan NIM  : "))
+    Tugas = int(input("Nilai Tugas  : ")); 
+    nilaiTugas.append(Tugas)
+    UTS   = int(input("Nilai UTS    : ")); 
+    nilaiUTS.append(UTS)
+    UAS   = int(input("Nilai UAS    : ")); 
+    nilaiUAS.append(UAS)
 
-## TAMBAH ELEMENT LIST
-# Tambah elemen list
-# Ambil 2 bagian dari list pertama (A) dan jadikan list ke 2 (B)
-    - list_A = my_list[:2]
-    - list_B = list_A.copy()
+    nilaiAkhir.append(Tugas * 30/100 + UTS * 35/100 + UAS * 35/100)
 
-# Tambahkan list B dengan nilai string
-    - B.append("Hello")
-
-# Tambahkan list B dengan 3 nilai
-    - list_B.extend([3, 6, 9])
-
-# Gabungkan list B dengan list A
-    - combined_list = list_B + list_A
-    
-# Tampilkan hasil
-    - print("List A:", list_A)
-    - print("List B:", list_B)
-    - print("Gabungan List B dengan List A:", combined_list)
-
-## Output
-
-
-
-## Penjelasan
-
-1. List pertama (list_A) diinisialisasi dengan nilai [1, 2, 3, 4, 5].
-2. Dua bagian pertama dari list_A diambil dan disalin ke list_B menggunakan slicing (list_A[:2]).
-3. Tiga nilai string ("string1" dan "string2") ditambahkan ke list_B menggunakan metode append.
-4. Tiga nilai (3, 4, dan 5) ditambahkan ke list_B menggunakan metode extend.
-5. List B (list_B) sekarang berisi dua bagian pertama dari list A, dua nilai string, dan tiga nilai tambahan.
-6. List B (list_B) kemudian digabungkan ke list A (list_A) menggunakan metode extend.
-7. Hasilnya dicetak untuk dilihat.
-
-## Praktikum 4
-
-## Input
-
-
-
-# LIST
-    print("\nMasukkan data mahasiswa:")
-    nama = input("Nama        : ")
-    nim = int(input("NIM         : "))
-    nilai_tugas = int(input("Nilai Tugas : "))
-    nilai_uts = int(input("Nilai UTS   : "))
-    nilai_uas = int(input("Nilai UAS   : "))
-
-# Input
-    data_mahasiswa.append({
-        'Nama': nama,
-        'NIM': nim,
-        'Nilai Tugas': nilai_tugas,
-        'Nilai UTS': nilai_uts,
-        'Nilai UAS': nilai_uas,
-        'Nilai Akhir': nilai_akhir
-    })
-
-    tambah_data = input("\nTambah Data(y/t)? ").lower()
-    if tambah_data != 'y':
+    print()
+    _tanya = input("Tambah data ? [y/t]: ")
+    print()
+    if(_tanya == "t"):
         break
 
 # Output
+    print("+----+-----------------------+--------+--------+-------+-------+---------+")
+    print("| {0:^2} | {1:^18} | {2:^9} | {3:^6} | {4:^5} | {5:^5} | {6:^7} |".format("No", "Nama", "NIM", "Tugas", "UTS", "UAS", "Akhir"))
+    print("-----+-----------------------+--------+--------+-------+-------+---------+")
 
-    print("\n{:=^85}".format(""))
-    print("| No | {:<21} | {:^10} | {:^15} | {:^5} | {:^5} | {:^5} |".format("Nama", "NIM", "Tugas", "UTS", "UAS", "Akhir"))
-    print("{:=^85}".format(""))
+    no = 0
+    for nama, nim, Tugas, UTS, UAS, nilaiAkhir in zip(nama, nim, nilaiTugas, nilaiUTS, nilaiUAS, nilaiAkhir):
+        no += 1    
+        print("| {0:>2} | {1:<18} | {2:>8} | {3:>6} | {4:>5} | {5:>5} | {6:>7} |".format(no, nama, nim, Tugas, UTS, UAS, nilaiAkhir))
+    print("+----+-----------------------+--------+--------+-------+-------+---------+")
+``````
+    ### Outputnya:
 
-    for idx, mahasiswa in enumerate(data_mahasiswa, start=1):
-    print("| {:<2} | {:<10} | {:^10} | {:^15} | {:^5} | {:^5} | {:.2f} |".format(idx, mahasiswa['Nama'], mahasiswa['NIM'],
-                                                                                    mahasiswa['Nilai Tugas'], mahasiswa['Nilai UTS'],
-                                                                                    mahasiswa['Nilai UAS'], mahasiswa['Nilai Akhir']))
-    print("{:=^85}".format(""))
-
-
-## Output
-
-
-
-## Flowchart
-<img src="Flowchart.png"/>
-
+<img src="Gambar/Praktikum.png">
 
 ## Penjelasan
 

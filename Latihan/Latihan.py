@@ -31,10 +31,10 @@ print("ListB Sebelum di tambahkan :\n", listb, "\n")
 lista  = [1 ,2 ,3 ,4 ,5]
 print("ListA\n", lista)
 listb  = [6 ,7 ,8 ]
-listb.insert(lista[0:2])  
+listb.insert(2,lista[0:2])  
 print("ListB Sesudah di tambahkan :\n", listb, "\n")
 
-# Mendambahkan list B dengan nilai string
+# Menambahkan list B dengan nilai string
 listb.append("String")
 print("ListB :\n", listb,"\n")
 
