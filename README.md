@@ -80,7 +80,7 @@
 
 ## Flowchartnya:
 
-<img src="Gambar/Flowchart">
+<img src="Gambar/Flowchart.png">
 
 ## Programnya:
 ``````    python
@@ -124,7 +124,6 @@
         print("| {0:>2} | {1:<18} | {2:>8} | {3:>6} | {4:>5} | {5:>5} | {6:>7} |".format(no, nama, nim, Tugas, UTS, UAS, nilaiAkhir))
     print("+----+-----------------------+--------+--------+-------+-------+---------+")
 ``````
-    ### Outputnya:
 
 <img src="Gambar/Praktikum.png">
 
