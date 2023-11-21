@@ -79,10 +79,9 @@
 * Buat flowchart dan penjelasan programnya pada README.md.
 
 ## Flowchartnya:
-
-<img src="Gambar/Flowchart.jpg" height="700px" align="center">
-
-
+<p align="center">
+<img src="Gambar/Flowchart.jpg" height="700px">
+</p>
 ## Programnya:
 ``````    python
     # LIST
