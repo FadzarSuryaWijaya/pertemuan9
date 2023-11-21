@@ -80,7 +80,7 @@
 
 ## Flowchartnya:
 
-<img src="Gambar/Flowchart.jpg" height="20%">
+<img src="Gambar/Flowchart.jpg" height="500px">
 
 ## Programnya:
 ``````    python
